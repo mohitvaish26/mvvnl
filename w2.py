@@ -1,11 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from reportlab.lib.pagesizes import A4, landscape
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
-from reportlab.lib import colors
-from reportlab.lib.units import inch
+
 
 # --- STEP 1: City data directly inside code ---
 
@@ -85,3 +81,4 @@ st.subheader("🔹 Area Details")
 st.table(table_df)
 
 # --- STEP 3: PDF Generator ---
+
